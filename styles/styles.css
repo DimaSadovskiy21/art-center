@@ -1,0 +1,206 @@
+.header__block {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 10px;
+}
+
+.header__logo {
+    width: 103px;
+    height: 82px;
+}
+
+.menu {
+    max-width: 594px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+}
+
+.menu__link {
+    height: 29px;
+    white-space: nowrap;
+}
+
+.menu__link:focus {
+    border-bottom: 1px solid var(--white);
+}
+
+.header__links {
+    max-width: 178px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+
+}
+
+.title__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__block {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 1029px;
+    width: 100%;
+    height: 152px;
+
+    font-family: var(--dela-gothic-one);
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.title__small {
+    font-size: 20px;
+}
+
+.title__large {
+    font-size: 105px;
+}
+
+.subtitle {
+    margin-top: 125px;
+    height: 0;
+    width: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    white-space: nowrap;
+    transform: rotate(90deg);
+}
+
+.top__img {
+    max-width: 386px;
+    width: 100%;
+}
+
+.exhibitions {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.exhibitions__title {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.exhibitions__carts {
+    display: flex;
+    gap: 40px 30px;
+    flex-wrap: wrap;
+}
+
+.exhibitions__cart {
+    display: flex;
+    align-items: flex-end;
+    max-width: 594px;
+    width: 100%;
+    height: 595px;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.exhibitions__cart:nth-child(1) {
+    max-width: 386px;
+    width: 100%;
+    height: 423px;
+    background-image: url('../assets/images/calendar.png');
+    background-position: center top;
+}
+
+.exhibitions__cart:nth-child(2) {
+    max-width: 802px;
+    width: 100%;
+    height: 423px;
+    background-image: url('../assets/images/1.png');
+}
+
+.exhibitions__cart:nth-child(3) {
+    background-image: url('../assets/images/2.png');
+}
+
+.exhibitions__cart:nth-child(4) {
+    background-image: url('../assets/images/3.png');
+}
+
+.cart__block {
+    height: 176px;
+    width: 100%;
+    padding: 20px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cart__description {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart__name {
+    max-width: 316px;
+    width: 100%;
+    font-family: var(--dela-gothic-one);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.cart__date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 211px;
+    width: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.exhibitions_link {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--white);
+    align-self: flex-end;
+}
