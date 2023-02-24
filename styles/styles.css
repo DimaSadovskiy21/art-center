@@ -392,6 +392,11 @@
     background-image: url("../assets/images/submit.svg");
     background-repeat: no-repeat;
     background-position: center center;
+    transition: all 1s;
+}
+
+.footer__button_submit:hover {
+    background-color: var(--dark-blue);
 }
 
 .footer__menu {
