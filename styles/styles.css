@@ -27,7 +27,7 @@
     white-space: nowrap;
 }
 
-.menu__link:focus {
+.menu__link:hover {
     border-bottom: 1px solid var(--white);
 }
 
@@ -203,4 +203,224 @@
     text-transform: uppercase;
     border-bottom: 1px solid var(--white);
     align-self: flex-end;
+}
+
+.joinUs {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 180px 0;
+}
+
+.joinUs__description_block {
+    max-width: 386px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.joinUs__title {
+    font-family: var(--dela-gothic-one);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.joinUs__description {
+    letter-spacing: 0.04em;
+}
+
+.joinUs__input_block {
+    max-width: 386px;
+    width: 100%;
+    padding: 40px 30px 60px;
+    background-color: var(--white);
+    border: 1px solid rgba(170, 166, 157, 0.2);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.joinUs__email {
+    border: none;
+    background: rgba(247, 241, 227, 0.2);
+    border-bottom: 1px solid #1F1D1A;
+    padding: 14px 20px 9px;
+    outline: none;
+    font-family: 'Avrile Sans Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+    color: #101010;
+}
+
+.joinUs__email::placeholder {
+    color: #101010;
+}
+
+.joinUs__button {
+    border: none;
+    font-family: var(--dela-gothic-one);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 12px;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.joinUs__button:hover {
+    background-color: var(--dark-blue);
+}
+
+.support {
+    max-width: 802px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    padding: 180px 0;
+    margin: 0 auto;
+}
+
+.support__title {
+    font-family: var(--dela-gothic-one);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-transform: uppercase;
+}
+
+.support__description {
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.support__button {
+    max-width: 386px;
+    width: 100%;
+    border: none;
+    font-family: var(--dela-gothic-one);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 12px;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.support__button:hover {
+    background-color: var(--dark-blue);
+}
+
+.footer .container {
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__logo {
+    max-width: 178px;
+    width: 100%;
+    margin-bottom: 37px;
+}
+
+.footer__description {
+    max-width: 386px;
+    width: 100%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.footer__description span {
+    font-weight: 700;
+}
+
+.footer__input_block {
+    display: flex;
+    align-items: center;
+}
+
+.footer__input {
+    max-width: 317px;
+    width: 100%;
+    height: 49px;
+    padding: 14px 19px 9px;
+    background-color: #D5CFC3;
+    border: 1px solid #645845;
+    font-family: var(--avrile-sans-condensed);
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    outline: none;
+}
+
+.footer__input::placeholder {
+    font-family: var(--avrile-sans-condensed);
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #101010;
+}
+
+.footer__button_submit {
+    max-width: 70px;
+    width: 100%;
+    height: 49px;
+    background-color: var(--blue);
+    border: none;
+    cursor: pointer;
+    background-image: url("../assets/images/submit.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.footer__menu {
+    max-width: 178px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer__link {
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.footer__contacts {
+    max-width: 386px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.footer__contact {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #000000
 }

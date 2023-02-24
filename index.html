@@ -20,11 +20,11 @@
             <div class="header__block">
                 <img class="header__logo" src="assets/images/logo.png" alt="logo">
                 <nav class="menu">
-                    <a class="menu__link" href="#">Main</a>
-                    <a class="menu__link" href="#">Exhibitions and events</a>
-                    <a class="menu__link" href="#">Gallery</a>
-                    <a class="menu__link" href="#">Shop</a>
-                    <a class="menu__link" href="#">Contacts</a>
+                    <a class="menu__link" href="#main">Main</a>
+                    <a class="menu__link" href="#exhibitions">Exhibitions and events</a>
+                    <a class="menu__link" href="#joinUs">Join us</a>
+                    <a class="menu__link" href="#support">Support</a>
+                    <a class="menu__link" href="#contacts">Contacts</a>
                 </nav>
                 <div class="header__links">
                     <a href="#">
@@ -42,7 +42,7 @@
     </header>
     <main>
         <div class="container">
-            <section class="top">
+            <section id="main" class="top">
                 <div class="title__wrapper">
                     <div class="title__block">
                         <h2 class="title">
@@ -57,7 +57,7 @@
                 </div>
                 <img class="top__img" src="assets/images/top.png" alt="Art center in Vilnus" />
             </section>
-            <section class="exhibitions">
+            <section id="exhibitions" class="exhibitions">
                 <h4 class="exhibitions__title">Exhibitions</h4>
                 <div class="exhibitions__carts">
                     <div class="exhibitions__cart"></div>
@@ -107,8 +107,64 @@
                 </div>
                 <a class="exhibitions_link" href="#">See all</a>
             </section>
+            <section id="joinUs" class="joinUs">
+                <div class="joinUs__description_block">
+                    <h4 class="joinUs__title">join us !</h4>
+                    <p class="joinUs__description">Stay up-to-date with the latest exhibitions, events, and news from
+                        our Art Center. Subscribe
+                        to our newsletter and never miss a beat!</p>
+                </div>
+                <div class="joinUs__input_block">
+                    <input class="joinUs__email" type="email" placeholder="Email">
+                    <button class="joinUs__button">subscribe</button>
+                </div>
+            </section>
+            <section id="support" class="support">
+                <h4 class="support__title">support our Art Center</h4>
+                <p class="support__description">
+                    Join us in supporting the Arts Center by making a donation today. Your contribution will help bring
+                    world-class exhibitions, events and educational programs to life, ensuring that everyone has access
+                    to the power of the arts. Together, we can make a lasting impact and preserve the arts for future
+                    generations.
+                </p>
+                <button class="support__button">support</button>
+            </section>
         </div>
     </main>
+    <footer id="contacts" class="footer">
+        <div class="container">
+            <div class="footer__description_block">
+                <img class="footer__logo" src="assets/images/footerLogo.png" alt="logo">
+                <p class="footer__description"><span>Subscribe</span> to our Art Center's newsletter and stay with us.
+                </p>
+                <div class="footer__input_block">
+                    <input class="footer__input" type="email" placeholder="Email">
+                    <button class="footer__button_submit"></button>
+                </div>
+            </div>
+            <nav class="footer__menu">
+                <a class="footer__link" href="#main">Main</a>
+                <a class="footer__link" href="#exhibitions">Exhibitions and events</a>
+                <a class="footer__link" href="#joinUs">Join us</a>
+                <a class="footer__link" href="#support">Support</a>
+                <a class="footer__link" href="#contacts">Contacts</a>
+            </nav>
+            <div class="footer__contacts">
+                <a class="footer__contact" href="https://yandex.by/maps/11475/vilnius/search/Laisv%C4%97s%20pr.%20121%E2%80%9133%2C%20LT%E2%80%9106120%20Vilnius/?ll=25.239581%2C54.725510&sctx=ZAAAAAgBEAAaKAoSCUK1wYnogztAEWGnWDUI9UpAEhIJnG1uTE9Y0D8RZoNMMnIWtj8iBgABAgMEBSgKOABA%2FZ4GSAFqAnVhnQHNzEw9oAEAqAEAvQE7fvxOwgEkyfnQyq8BoIqmjtoGv%2FOXzfoE2vCw7J8CqYzpt80Bgs6gssQB6gEA8gEA%2BAEAggIpTGFpc3bEl3MgcHIuIDEyMeKAkTMzLCBMVOKAkTA2MTIwIFZpbG5pdXOKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=25.236741%2C54.724206&sspn=0.026845%2C0.008891&z=18.5" target="_blank">
+                    <img src="assets/images/address.svg" alt="address">
+                    Laisvės pr. 121‑33, LT‑06120 Vilnius
+                </a>
+                <a class="footer__contact" href="mailto:ArtCen_Vilnius@gmail.com">
+                    <img src="assets/images/gmail.svg" alt="gmail">
+                    ArtCen_Vilnius@gmail.com
+                </a>
+                <a class="footer__contact" href="tel:+370 (678) 89-462">
+                    <img src="assets/images/call.svg" alt="call">
+                    +370 (678) 89-462
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
