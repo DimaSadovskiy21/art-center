@@ -3,8 +3,62 @@
     justify-content: space-between;
     align-items: center;
 
-    gap: 15px;
+    gap: 20px;
     padding: 30px 0 10px;
+}
+
+.burger__menu {
+    position: relative;
+    display: none;
+
+    width: 60px;
+    height: 45px;
+
+    cursor: pointer;
+}
+
+.burger__menu span {
+    position: absolute;
+    left: 0;
+    display: block;
+
+    height: 5px;
+    width: 100%;
+
+    background: #F7F1E3;
+}
+
+.burger__menu span:nth-child(1) {
+    top: 0px;
+}
+
+.burger__menu span:nth-child(2) {
+    top: 18px;
+}
+
+.burger__menu span:nth-child(3) {
+    top: 36px;
+}
+
+.menu__box {
+    position: absolute;
+    top: 70px;
+    left: -20px;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+
+    width: 360px;
+    gap: 20px;
+    padding: 100px 20px;
+
+    white-space: wrap;
+    text-transform: uppercase;
+    background-color: var(--black);
+}
+
+.burger__menu:hover .menu__box {
+    visibility: visible;
 }
 
 .header__logo {
@@ -16,7 +70,7 @@
     display: flex;
     justify-content: space-between;
 
-    gap: 15px;
+    gap: 20px;
     max-width: 594px;
     width: 100%;
 
@@ -42,7 +96,7 @@
     display: flex;
     justify-content: space-between;
 
-    gap: 15px;
+    gap: 20px;
     max-width: 178px;
     width: 100%;
 }
@@ -160,6 +214,7 @@
     width: 100%;
 
     background-color: var(--white);
+    overflow: hidden;
 }
 
 .exhibitions__cart:nth-child(1) {
@@ -203,14 +258,13 @@
     background-color: rgba(0, 0, 0, 0.7);
 
     visibility: hidden;
-    overflow: hidden;
+    transition: all 0.5s;
 }
 
 .exhibitions__cart:hover .cart__block {
     bottom: 0;
 
     visibility: visible;
-    transition: all 0.5s;
 }
 
 .cart__description {
@@ -246,20 +300,15 @@
 
 .cart__link {
     position: relative;
+    left: 0;
+
+    padding-left: 30px;
+
+    transition: all 0.3s;
 }
 
 .cart__link:hover {
-    animation: animation-link 0.3s ease both;
-}
-
-@keyframes animation-link {
-    from {
-        left: 0
-    }
-
-    to {
-        left: 30px
-    }
+    left: 30px
 }
 
 .exhibitions_link {
@@ -514,6 +563,7 @@
 }
 
 .footer__link {
+    width: fit-content;
     border-bottom: 1px solid transparent;
 
     font-size: 30px;
@@ -550,11 +600,21 @@
 }
 
 .footer__contact:hover {
-    color: #D5CFC3;
+    color: var(--blue);
 }
 
 .footer__contact:hover svg {
-    color: #D5CFC3;
+    color: var(--blue);
 
     transition: color 0.3s;
+}
+
+@media screen and (max-width: 895px) {
+    .burger__menu {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
 }

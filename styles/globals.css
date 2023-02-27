@@ -50,3 +50,9 @@ body {
     --avrile-sans-condensed: 'Avrile Sans Condensed', sans-serif;
     --dela-gothic-one: 'Dela Gothic One', sans-serif;
 }
+
+@media screen and (max-width: 895px) {
+    .container {
+        padding: 0 20px;
+    }
+}
