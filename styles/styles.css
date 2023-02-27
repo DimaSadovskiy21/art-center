@@ -1,8 +1,9 @@
 .header__block {
     display: flex;
-    gap: 15px;
     justify-content: space-between;
     align-items: center;
+
+    gap: 15px;
     padding: 30px 0 10px;
 }
 
@@ -12,19 +13,25 @@
 }
 
 .menu {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
     max-width: 594px;
     width: 100%;
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
+
     font-size: 20px;
-    line-height: 29px;
-    letter-spacing: 0.04em;
+    line-height: 1.4em;
 }
 
 .menu__link {
-    height: 29px;
+    height: 28px;
+    border-bottom: 1px solid transparent;
+
+    letter-spacing: 0.04em;
     white-space: nowrap;
+
+    transition: all 0.3s;
 }
 
 .menu__link:hover {
@@ -32,37 +39,50 @@
 }
 
 .header__links {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
     max-width: 178px;
     width: 100%;
-    display: flex;
-    gap: 15px;
-    justify-content: space-between;
+}
+
+.header__link {
+    transition: all 0.3s;
+}
+
+.header__link:hover {
+    transform: scale(1.1);
 }
 
 .top {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     gap: 30px;
 
 }
 
 .title__wrapper {
-    width: 100%;
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
 }
 
 .title__block {
-    margin-top: 65px;
     display: flex;
     flex-direction: column;
+
     gap: 30px;
+    margin-top: 65px;
 }
 
 .title {
     display: flex;
     flex-direction: column;
+
     gap: 30px;
     max-width: 1029px;
     width: 100%;
@@ -84,15 +104,18 @@
 }
 
 .subtitle {
-    margin-top: 125px;
     height: 0;
     width: 0;
+
+    margin-top: 125px;
+
     font-weight: 600;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 1.4em;
     letter-spacing: 0.1em;
     text-transform: capitalize;
     white-space: nowrap;
+
     transform: rotate(90deg);
 }
 
@@ -102,34 +125,40 @@
 }
 
 .exhibitions {
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
+
     gap: 50px;
+    margin-top: 60px;
 }
 
 .exhibitions__title {
-    font-family: 'Dela Gothic One';
+    font-family: var(--dela-gothic-one);
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 58px;
+    line-height: 1.4em;
     text-transform: uppercase;
 }
 
 .exhibitions__carts {
     display: flex;
-    gap: 40px 30px;
     flex-wrap: wrap;
+
+    gap: 40px 30px;
 }
 
 .exhibitions__cart {
+    position: relative;
+
     display: flex;
     align-items: flex-end;
+
     max-width: 594px;
     width: 100%;
     height: 595px;
     width: 100%;
+
     background-color: var(--white);
 }
 
@@ -137,6 +166,7 @@
     max-width: 386px;
     width: 100%;
     height: 423px;
+
     background-image: url('../assets/images/calendar.png');
     background-position: center top;
 }
@@ -145,6 +175,7 @@
     max-width: 802px;
     width: 100%;
     height: 423px;
+
     background-image: url('../assets/images/1.png');
 }
 
@@ -157,66 +188,112 @@
 }
 
 .cart__block {
-    height: 176px;
-    width: 100%;
-    padding: 20px 40px 30px;
+    position: absolute;
+    bottom: -100%;
+
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: flex-end;
+
+    height: 176px;
+    width: 100%;
+    gap: 20px;
+    padding: 20px 40px 30px;
+
     background-color: rgba(0, 0, 0, 0.7);
+
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.exhibitions__cart:hover .cart__block {
+    bottom: 0;
+
+    visibility: visible;
+    transition: all 0.5s;
 }
 
 .cart__description {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    width: 100%;
 }
 
 .cart__name {
     max-width: 316px;
     width: 100%;
+
     font-family: var(--dela-gothic-one);
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 43px;
+    line-height: 1.4em;
 }
 
 .cart__date {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
     max-width: 211px;
     width: 100%;
+
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
 
+.cart__link {
+    position: relative;
+}
+
+.cart__link:hover {
+    animation: animation-link 0.3s ease both;
+}
+
+@keyframes animation-link {
+    from {
+        left: 0
+    }
+
+    to {
+        left: 30px
+    }
+}
+
 .exhibitions_link {
-    font-family: 'Dela Gothic One';
+    align-self: flex-end;
+
+    border-bottom: 1px solid var(--white);
+
+    font-family: var(--dela-gothic-one);
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 43px;
+    line-height: 1.4em;
     text-transform: uppercase;
-    border-bottom: 1px solid var(--white);
-    align-self: flex-end;
+    transition: all 0.3s;
+}
+
+.exhibitions_link:hover {
+    border-bottom: 1px solid transparent;
 }
 
 .joinUs {
     display: flex;
-    gap: 30px;
     justify-content: center;
+
+    gap: 30px;
     padding: 180px 0;
 }
 
 .joinUs__description_block {
-    max-width: 386px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+
+    max-width: 386px;
+    width: 100%;
     gap: 30px;
 }
 
@@ -225,7 +302,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 58px;
+    line-height: 1.4em;
     text-transform: uppercase;
 }
 
@@ -234,30 +311,41 @@
 }
 
 .joinUs__input_block {
-    max-width: 386px;
-    width: 100%;
-    padding: 40px 30px 60px;
-    background-color: var(--white);
-    border: 1px solid rgba(170, 166, 157, 0.2);
-    backdrop-filter: blur(30px);
     display: flex;
     flex-direction: column;
+
+    max-width: 386px;
+    width: 100%;
     gap: 30px;
+    padding: 40px 30px 60px;
+    border: 1px solid rgba(170, 166, 157, 0.2);
+    backdrop-filter: blur(30px);
+
+    background-color: var(--white);
 }
+
 
 .joinUs__email {
     border: none;
-    background: rgba(247, 241, 227, 0.2);
     border-bottom: 1px solid #1F1D1A;
     padding: 14px 20px 9px;
-    outline: none;
-    font-family: 'Avrile Sans Condensed';
+
+
+    font-family: var(--avrile-sans-condensed);
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 1.4em;
     letter-spacing: 0.04em;
     color: #101010;
+    background: rgba(247, 241, 227, 0.2);
+
+    outline: none;
+    transition: all 0.3s;
+}
+
+.joinUs__email:focus {
+    border-color: var(--white);
 }
 
 .joinUs__email::placeholder {
@@ -266,17 +354,19 @@
 
 .joinUs__button {
     border: none;
+    padding: 12px;
+
     font-family: var(--dela-gothic-one);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 1.4em;
     text-transform: uppercase;
     color: var(--white);
-    padding: 12px;
     background-color: var(--blue);
+
     cursor: pointer;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 .joinUs__button:hover {
@@ -284,12 +374,13 @@
 }
 
 .support {
-    max-width: 802px;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
     align-items: center;
+
+    max-width: 802px;
+    width: 100%;
+    gap: 40px;
     padding: 180px 0;
     margin: 0 auto;
 }
@@ -299,7 +390,7 @@
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 58px;
+    line-height: 1.4em;
     text-transform: uppercase;
 }
 
@@ -311,18 +402,20 @@
 .support__button {
     max-width: 386px;
     width: 100%;
+    padding: 12px;
     border: none;
+
     font-family: var(--dela-gothic-one);
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 1.4em;
     text-transform: uppercase;
     color: var(--white);
-    padding: 12px;
     background-color: var(--blue);
+
     cursor: pointer;
-    transition: all 1s;
+    transition: all 0.3s;
 }
 
 .support__button:hover {
@@ -330,11 +423,13 @@
 }
 
 .footer .container {
-    background-color: var(--white);
     display: flex;
     justify-content: space-between;
+
     padding-top: 60px;
     padding-bottom: 60px;
+
+    background-color: var(--white);
 }
 
 .footer__logo {
@@ -346,9 +441,10 @@
 .footer__description {
     max-width: 386px;
     width: 100%;
+    margin-bottom: 20px;
+
     letter-spacing: 0.04em;
     color: #000000;
-    margin-bottom: 20px;
 }
 
 .footer__description span {
@@ -365,19 +461,26 @@
     width: 100%;
     height: 49px;
     padding: 14px 19px 9px;
-    background-color: #D5CFC3;
     border: 1px solid #645845;
+
     font-family: var(--avrile-sans-condensed);
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1.4em;
     letter-spacing: 0.04em;
+    background-color: #D5CFC3;
+
     outline: none;
+    transition: all 0.3s;
+}
+
+.footer__input:focus {
+    border: 1px solid transparent;
 }
 
 .footer__input::placeholder {
     font-family: var(--avrile-sans-condensed);
     font-size: 18px;
-    line-height: 26px;
+    line-height: 1.4em;
     letter-spacing: 0.04em;
     color: #101010;
 }
@@ -386,13 +489,15 @@
     max-width: 70px;
     width: 100%;
     height: 49px;
-    background-color: var(--blue);
     border: none;
-    cursor: pointer;
+
+    background-color: var(--blue);
     background-image: url("../assets/images/submit.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    transition: all 1s;
+
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .footer__button_submit:hover {
@@ -400,32 +505,56 @@
 }
 
 .footer__menu {
-    max-width: 178px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+
+    max-width: 178px;
+    width: 100%;
     gap: 20px;
 }
 
 .footer__link {
+    border-bottom: 1px solid transparent;
+
     font-size: 30px;
-    line-height: 44px;
+    line-height: 1.4em;
     letter-spacing: 0.04em;
     color: #000000;
+
+    transition: all 0.3s;
+}
+
+.footer__link:hover {
+    border-bottom: 1px solid #000000;
 }
 
 .footer__contacts {
-    max-width: 386px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+
+    max-width: 386px;
+    width: 100%;
     gap: 35px;
 }
 
 .footer__contact {
     display: flex;
-    gap: 20px;
     align-items: center;
+
+    gap: 20px;
+
     letter-spacing: 0.04em;
-    color: #000000
+    color: #000000;
+
+    transition: color 0.3s;
+}
+
+.footer__contact:hover {
+    color: #D5CFC3;
+}
+
+.footer__contact:hover svg {
+    color: #D5CFC3;
+
+    transition: color 0.3s;
 }

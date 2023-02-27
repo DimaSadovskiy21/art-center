@@ -25,27 +25,28 @@
 }
 
 body {
-    font-family: var(--avrile-sans-condensed);
     color: var(--white);
+    font-family: var(--avrile-sans-condensed);
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 36px;
+    font-size: 24px;
+    line-height: 1.5em;
 }
 
 .container {
     max-width: 1280px;
     width: 100%;
     padding: 0 31px;
-    background-color: var(--black);
     margin: 0 auto;
+
+    background-color: var(--black);
 }
 
 :root {
-    --avrile-sans-condensed: 'Avrile Sans Condensed', sans-serif;
-    --dela-gothic-one: 'Dela Gothic One', sans-serif;
     --white: #F7F1E3;
     --black: #1F1D1A;
     --blue: #26265A;
     --dark-blue: #0E0E38;
+    --avrile-sans-condensed: 'Avrile Sans Condensed', sans-serif;
+    --dela-gothic-one: 'Dela Gothic One', sans-serif;
 }

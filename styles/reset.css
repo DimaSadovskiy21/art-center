@@ -7,6 +7,7 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+
 	font-size: 100%;
 	vertical-align: baseline;
 }
@@ -20,10 +21,12 @@ body {
 }
 ol {
 	padding-left: 1.4em;
+
 	list-style: decimal;
 }
 ul {
 	padding-left: 1.4em;
+	
 	list-style: square;
 }
 table {
