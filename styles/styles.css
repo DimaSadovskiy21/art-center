@@ -668,7 +668,7 @@
     }
 
     .exhibitions__cart:nth-child(2) {
-        max-width: 100%;
+        max-width: calc((100% - 20px));
         margin: 0 auto;
 
         background-size: 100%;
@@ -730,6 +730,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-color: inherit;
+    }
+
+    .exhibitions__cart:nth-child(2) {
+        max-width: 100%;
     }
 
     .exhibitions__cart:nth-child(3) {
